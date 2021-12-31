@@ -1,0 +1,1021 @@
+/* CREATED */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://p4.wallpaperbetter.com/wallpaper/194/846/328/venom-artwork-4k-8k-wallpaper-preview.jpg') no-repeat;
+    background-size:  100% 100%;}
+body::before 
+{
+    content: '';
+    position: fixed
+    ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.80);
+}
+.loader
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 9999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader img
+{
+    max-width: 100%;
+}
+.app
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('https://www.mordeo.org/files/uploads/2018/10/Venom-Artwork-4K-Ultra-HD-Mobile-Wallpaper-950x1689.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 50px 5px 45px 5px;
+    border: 2px solid #5F1B01;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.app:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.80);
+}
+.app .head
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 65px;
+    background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/head_bg.png') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 50px;
+    filter:hue-rotate(100deg)
+}
+/* 322D58 */
+.head h1
+{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2;
+    color: #fff;
+    text-shadow: 0 1px 5px black;
+}
+.app .swiper 
+{
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    height: 230px;
+    box-shadow: 0 1px 5px black;
+    border: 2px solid #26111A;
+    cursor: grab;
+    user-select: none;
+}
+.app .swiper:active
+{
+    cursor: grabbing;
+}
+.swiper .corner
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+}
+.swiper .corner:nth-child(1)
+{
+    top:0;
+    left: 0;
+    border-top:3px solid #5F1B01;
+    filter:drop-shadow(0 1px 5px #5F1B01);
+    border-left:3px solid #5F1B01;
+}
+.swiper .corner:nth-child(2)
+{
+    bottom:0;
+    left: 0;
+    border-bottom:3px solid #5F1B01;
+    filter:drop-shadow(0 1px 5px #5F1B01);
+    border-left:3px solid #5F1B01;
+}
+.swiper .corner:nth-child(3)
+{
+    top:0;
+    right: 0;
+    border-top:3px solid #5F1B01;
+    filter:drop-shadow(0 1px 5px #5F1B01);
+    border-right:3px solid #5F1B01;
+}
+.swiper .corner:nth-child(4)
+{
+    bottom:0;
+    right: 0;
+    border-bottom:3px solid #5F1B01;
+    filter:drop-shadow(0 1px 5px #5F1B01);
+    border-right:3px solid #5F1B01;
+}
+.swiper span
+{
+    background: red;
+}
+.swiper .swiper-slide
+{
+    position: relative;
+}
+.swiper-slide img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+.app .banner
+{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    filter: drop-shadow(0 1px 2px black);
+    text-align: center;
+    line-height: 50px;
+    filter:hue-rotate(100deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.app .banner::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/for_grand.png') no-repeat;
+    background-size: 100% 100%;
+    transform: scale(1.1);
+}
+.banner .imgBox
+{
+    position: relative;
+    width: 100px;
+    height: 100%;
+    filter:hue-rotate(225deg)
+}
+.banner .imgBox:nth-child(2)
+{
+    width: 55px;
+    filter: invert(1);
+}
+.imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner h2
+{
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+}
+.app .menu
+{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+.menu .label
+{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background:url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/for_grand.png') no-repeat;
+    margin: 0 10px 0 10px;
+    background-position: 50%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size:16px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 1px 5px black;
+    box-shadow: 0 1px 5px black;
+    letter-spacing: 1;
+    line-height: 40px;
+    cursor: pointer;
+    border: 1px solid #5F1B01;
+    border-radius: 2px;
+    transform-style: preserve-3d;
+}
+.label h1
+{
+    font-size: 25px;
+}
+.label h1:before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    left: 40px;
+    animation: spinning 1s infinite linear;
+}
+.label h1:after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    right: 40px;
+    animation: spinning 1s infinite linear;
+}
+@keyframes spinning
+{
+    0%,100% 
+    {
+        transform: translateY(-50%) scale(1) rotateZ(0deg);
+    }
+    50%
+    {
+        transform: translateY(-50%) scale(1.5) rotateZ(360deg);
+    }
+}
+.menu .sub
+{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background:url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/for_grand.png') no-repeat;
+    margin: 0 10px 0 10px;
+    background-position: 50%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size:16px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 1px 5px black;
+    box-shadow: 0 1px 5px black;
+    letter-spacing: 1;
+    line-height: 29px;
+    cursor: pointer;
+    border: 1px solid #5F1B01;
+    border-radius: 2px;
+}
+.menu .sub.active
+{
+    background:url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/for_grand.png') no-repeat;
+    background-position: 50%;
+}
+.sub .corner
+{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+    display: none;
+}
+.label .corner
+{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+}
+
+.sub.active .corner
+{
+    display: block;
+}
+.sub .corner:nth-child(1), .label .corner:nth-child(5)
+{
+    top:1px;
+    left: 1px;
+    border-top:2px solid #5F1B01;
+    filter:drop-shadow(0 1px 5px #5F1B01);
+    border-left:2px solid #5F1B01;
+}
+.sub .corner:nth-child(2), .label .corner:nth-child(2)
+{
+    bottom:1px;
+    left: 1px;
+    border-bottom:2px solid #5F1B01;
+    filter:drop-shadow(0 1px 5px #5F1B01);
+    border-left:2px solid #5F1B01;
+}
+.sub .corner:nth-child(3), .label .corner:nth-child(3)
+{
+    top:1px;
+    right:1px;
+    border-top:2px solid #5F1B01;
+    filter:drop-shadow(0 1px 5px #5F1B01);
+    border-right:2px solid #5F1B01;
+}
+.sub .corner:nth-child(4), .label .corner:nth-child(4)
+{
+    bottom:1px;
+    right: 1px;
+    border-bottom:2px solid #5F1B01;
+    filter:drop-shadow(0 1px 5px #5F1B01);
+    border-right:2px solid #5F1B01;
+}
+
+.app .areaBox
+{
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1.5s;
+}
+.areaBox .formBox
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+}
+.formBox .form-group
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.formBox .form-group:first-child
+{
+    margin-top: 20px;
+}
+.formBox .form-group:not(:first-child)
+{
+  margin-top: 15px;
+}
+.form-group .finput
+{
+	width: 300px;
+	height: 40px;
+	background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/for_grand.png') no-repeat;
+	background-size: 100% 100%;
+	border:none;
+	font-family: 'Signika', sans-serif;
+	outline: none;
+	color:#fff;
+	padding: 0 20px;
+	line-height: 45px;
+    filter: hue-rotate(310deg);
+}
+
+.form-group .finput::placeholder
+{
+	color:#fff;
+}
+
+.form-group .fsubmit
+{
+	width:100px;
+	height: 30px;
+	background: url('https://dl.dir.freefiremobile.com/common/web_event/4thanniversary/images-hash/6fe0e1b046cf852d248659e9c3678bd5bf4585879537278612831b42759c7e27.png') no-repeat;
+	background-size: 100% 100%;
+	font-family: 'Signika', sans-serif;
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: -1px;
+	line-height: 30px;
+	color:#fff;
+	text-shadow: 0 0 2px #000;
+	margin: 0 5px;
+	border:none;
+	outline: none;
+    filter: hue-rotate(320deg);
+	cursor: pointer;
+}
+
+
+
+
+.areaBox .wrapSpin
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1s;
+}
+.wrapSpin .spin
+{
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.spin .spinItem
+{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin:10px;
+    border: 3px solid #5F1B01;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px black;
+}
+.spin .spinItem:nth-child(5)
+{
+    border: none;
+    box-shadow: none;
+}
+.spin .spinItem:nth-child(5):before
+{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 110px;
+    background: url('https://i.pinimg.com/originals/2f/d7/9e/2fd79ea4b67f795eaed61878ac4a1db8.png') no-repeat;
+    background-size: 100% 100%;
+}
+.spinItem img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.spinItem .corner
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 99;
+    display: none;
+}
+.spinItem.active .corner
+{
+    display: block;
+}
+.spinItem .corner:nth-child(5)
+{
+    top:1px;
+    left: 1px;
+    border-top:2px solid #fff;
+    filter:drop-shadow(0 1px 5px #fff);
+    border-left:2px solid #fff;
+    z-index: 99;
+}
+.spinItem .corner:nth-child(2)
+{
+    bottom:1px;
+    left: 1px;
+    border-bottom:2px solid #fff;
+    filter:drop-shadow(0 1px 5px #fff);
+    border-left:2px solid #fff;
+}
+.spinItem .corner:nth-child(3)
+{
+    top:1px;
+    right:1px;
+    border-top:2px solid #fff;
+    filter:drop-shadow(0 1px 5px #fff);
+    border-right:2px solid #fff;
+}
+.spinItem .corner:nth-child(4)
+{
+    bottom:1px;
+    right: 1px;
+    border-bottom:2px solid #fff;
+    filter:drop-shadow(0 1px 5px #fff);
+    border-right:2px solid #fff;
+}
+.wrapSpin .spinButton
+{
+    position: relative;
+    width: 110px;
+    height: 50px;
+    background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/spin.png') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 39px;
+    filter: hue-rotate(52deg);
+    font-family: 'Bebas Neue';
+    color: #fff;
+    text-shadow: 0 1px 5px black;
+    cursor: pointer;
+}
+
+
+
+.app .claims
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    transition: 1s;
+}
+.claims .boxItem
+{
+    position: relative;
+    width: 90px;
+    height: 95px;
+    margin: 10px;
+    margin-bottom: 35px;
+    /* border: 1px solid #5F1B01; */
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    box-shadow: 0 1px 5px black;
+}
+.boxItem .btnItem 
+{
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/for_grand.png') no-repeat;
+    background-position-x: -20px;
+    background-position-y: -10px;
+    border: 3px solid #5F1B01;
+    border-top: none;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    font-family: 'Bebas Neue';
+    text-shadow: 0 1px 5px black;
+    cursor: pointer;
+}
+
+.boxItem img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border: 3px solid #5F1B01;
+}
+
+
+.mask
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.80);
+    z-index: 999;
+    display: block;
+}
+.loading
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    display: none;
+}
+.loading svg
+{
+    width: 100px;
+    height: 100px;
+    fill: #FFC0CB;
+    animation: rainbow .5s infinite linear;
+}
+@keyframes rainbow
+{
+    from
+    {
+        filter: hue-rotate(0deg);
+    }
+    to
+    {
+        filter: hue-rotate(100deg);
+    }
+}
+.app .popUp
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 215px;
+    background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/dialog_bg.png') no-repeat;
+    background-size: 100% 100%;
+    filter: hue-rotate(100deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+    display: none;
+}
+.popUp h1
+{
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2;
+    color: #fff;
+    text-shadow: 0 1px 5px black;
+}
+
+.popUp .imgBozx
+{
+    position: relative;
+    width: 90px;
+    height: 95px;
+    filter: hue-rotate(260deg);
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.imgBozx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 2px solid #5F1B01;
+}
+
+.popUp .nextBtn
+{
+    position: relative;
+    margin-top: 10px;
+    width: 100px;
+    height: 45px;
+    background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/spin.png') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 35px;
+    filter: hue-rotate(52deg);
+    font-family: 'Bebas Neue';
+    color: #fff;
+    text-shadow: 0 1px 5px black;
+    filter: hue-rotate(310deg);
+    cursor: pointer;
+}
+
+.app .footer
+{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 45px;
+  background: #000;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer .garena 
+{
+  position: relative;
+  width: 35px;
+  height: 30px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.garena img
+{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+.footer .copyright
+{
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: 'Signika';
+}
+.copyright .atas
+{
+  font-size: 12px;
+} 
+.copyright .bawah
+{
+  font-size: 12px;
+} 
+
+.app .toast
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/toast.png') no-repeat;
+    background-size: 100% 100%;
+    transition: width 2s;
+    animation: width 1s forwards;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    filter:hue-rotate(100deg);
+    font-family: 'Signika';
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 9999;
+    display: none;
+}
+@keyframes width
+{
+    from 
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 400px;
+    }
+}
+
+
+.app .klo
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 350px;
+  height: 210px;
+  background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/dialog_bg.png') no-repeat;
+  background-size: 100% 100%;
+  filter: hue-rotate(100deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+.klo .ok
+{
+  color: #fff;
+  font-family: 'Suez One';
+  text-shadow: 0 0 5px black;
+  font-size: 20px;
+}
+.klo .ler
+{
+  position: relative;
+  margin-top: 20px;
+  width: 200px;
+  height: 35px;
+  background: url('https://www.pubgmobile.com/id/event/musicContest/images/m/btn_2.png') no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+  font-family: 'Signika', sans-serif;
+  font-weight: bold;
+  cursor:pointer;
+}
+.klo .ler.error
+{
+  animation: shake .1s linear;
+  animation-iteration-count: 3;
+}
+@keyframes shake {
+  0%
+  { 
+    left: -5px;
+  }
+  100% 
+  { 
+    right: -5px; 
+  }
+}
+.klo .ler::placeholder
+{
+  color: #fff;
+  font-family: 'Signika', sans-serif;
+  font-weight: bold;
+}
+.klo .jr 
+{
+  position: absolute;
+  top: -22px;
+  left: 63px;
+  width: 214px;
+  height: 20px;
+  background: #F02E58;
+  padding-left: 5px;
+  display: none;
+}
+.klo .jr #懼
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-family: 'Signika', sans-serif;
+  z-index: 999;
+}
+.klo .jr:before
+{
+  content: '';
+  position: absolute;
+  top:0;
+  left:-10px;
+  width: 100%;
+  height: 100%;
+  background: #F02E58;
+  transform: skewX(315deg);
+  z-index: 99;
+}
+.klo .yop
+{
+  margin-top: 20px;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/spin.png') no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  font-family: 'Signika', sans-serif;
+  text-shadow: -2px 0 black;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 30px;
+  filter: hue-rotate(310deg);
+  text-align: center;
+  cursor:pointer;
+}
+
+
+
+@media only screen and (min-width: 500px)
+{
+    .app
+    {
+        width: 400px;
+    }
+}
+@media(min-width:425px)
+{
+    .spin .spinItem 
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .claims .boxItem 
+    {
+        width: 100px;
+        height: 110px;
+    }
+}
+@media(max-width:380px)
+{
+    .spin .spinItem 
+    {
+        width: 95px;
+        height: 95px;
+    }
+}
+@media(max-width:375px)
+{
+    .claims .boxItem 
+    {
+        width: 79px;
+        height: 79px;
+    }
+    .boxItem .btnItem 
+    {
+        font-size: 14px;
+    }
+    .label h1:after
+    {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        right: 20px;
+        animation: spinning 1s infinite linear;
+    }
+    .label h1:before
+    {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        left: 20px;
+        animation: spinning 1s infinite linear;
+    }
+}
+@media(max-width:368px)
+{
+    .spin .spinItem 
+    {
+        width: 78px;
+        height: 78px;
+    }
+    .app .swiper 
+    {
+        width: 100%;
+        height: 175px;
+    }
+    .app .banner 
+    {
+        height: 40px;
+    }
+    .copyright .bawah 
+    {
+        font-size: 9px;
+    }
+    .copyright .atas 
+    {
+        font-size: 9px;
+    }
+    .wrapSpin .spinButton 
+    {
+        width: 95px;
+        height: 45px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+}
